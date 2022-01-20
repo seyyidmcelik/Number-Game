@@ -26,7 +26,17 @@ function App() {
   };
 
   const update = () => {
-    if (input.current.value <= 0 || input.current.value > 10) {
+    if (isNaN(input.current.value)) {
+      Swal.fire({
+        icon: "warning",
+        title: "Opps..",
+        text: "You should only numbers",
+        showConfirmButton: false,
+        timer: 1750,
+      });
+      input.current.value = null;
+      input.current.focus();
+    } else if (input.current.value <= 0 || input.current.value > 10) {
       Swal.fire({
         icon: "warning",
         title: "Opps..",
