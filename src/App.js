@@ -89,6 +89,7 @@ function App() {
         ) : start ? (
           <div id="gameContainer">
             <h3>Number Estimate Game</h3>
+            <p>The number is between 1 and 10</p>
             <input
               type="text"
               name=""
