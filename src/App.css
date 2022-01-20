@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap");
+
+* {
+  font-family: "Luxurious Roman", cursive;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  outline: none;
+  padding: 7px 10px;
+  background-color: rgb(21, 110, 226);
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+input {
+  padding: 4px;
+  border: none;
+  border-bottom: 2px solid rgb(21, 110, 226);
+  outline: none;
+  color: rgb(21, 110, 226);
+  margin-right: 10px;
+}
+
+input:focus {
+  outline-color: rgb(21, 110, 226);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.welcome {
+  z-index: 9;
+}
+
+.bubbles {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.bubbles span {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid #a0a0a0;
+  color: #a0a0a0;
+  border-radius: 50%;
+  z-index: -1;
+  position: relative;
+  bottom: -15vh;
+  animation: bubbleAnimation 5s linear infinite;
+}
+
+#span1 {
+  animation-delay: 0s;
+  transform: scale(1.4);
+}
+#span2 {
+  animation-delay: -1s;
+}
+#span3 {
+  animation-delay: 1s;
+  transform: scale(0.8);
+}
+#span4 {
+  animation-delay: -2s;
+  transform: scale(1.75);
+}
+#span5 {
+  animation-delay: 0s;
+}
+#span6 {
+  animation-delay: -1.5s;
+}
+#span7 {
+  animation-delay: -2.5s;
+  transform: scale(1.3);
+}
+#span8 {
+  animation-delay: 0.4s;
+  transform: scale(0.8);
+}
+#span9 {
+  animation-delay: 1.75s;
+  transform: scale(1.6);
+}
+#span10 {
+  animation-delay: -0.4s;
+}
+
+@keyframes bubbleAnimation {
+  0% {
+    bottom: 0;
+    transform: scale(0.5);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(1.7);
+  }
+  99%,
+  100% {
+    bottom: 90vh;
+    opacity: 0;
+
+    transform: scale(1);
+  }
+}
