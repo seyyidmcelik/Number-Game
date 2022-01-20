@@ -32,7 +32,7 @@ function App() {
         title: "Opps..",
         text: "You should use only numbers",
         showConfirmButton: false,
-        timer: 1750,
+        timer: 2000,
       });
       input.current.value = null;
       input.current.focus();
@@ -42,7 +42,7 @@ function App() {
         title: "Opps..",
         text: "Your estimate must be between 1 and 10",
         showConfirmButton: false,
-        timer: 1750,
+        timer: 2000,
       });
       input.current.value = null;
       input.current.focus();
@@ -52,7 +52,7 @@ function App() {
         title: "Opps..",
         text: "Change the estimate number",
         showConfirmButton: false,
-        timer: 1750,
+        timer: 2000,
       });
       input.current.focus();
       input.current.value = null;
