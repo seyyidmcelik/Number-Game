@@ -2,6 +2,7 @@
 
 * {
   font-family: "Luxurious Roman", cursive;
+  box-sizing: border-box;
 }
 
 h3 {
