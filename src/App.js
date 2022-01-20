@@ -30,7 +30,7 @@ function App() {
       Swal.fire({
         icon: "warning",
         title: "Opps..",
-        text: "You should only numbers",
+        text: "You should use only numbers",
         showConfirmButton: false,
         timer: 1750,
       });
